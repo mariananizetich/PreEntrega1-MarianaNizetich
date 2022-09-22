@@ -1,5 +1,5 @@
 import './NavBar.css';
-import CartWidget from "./CartWidget"
+
 
 const Navbar = ({}) => {
    
@@ -19,9 +19,7 @@ const Navbar = ({}) => {
                 CONTACTO
             </a>
             </li>
-            <li>
-                <CartWidget />
-            </li>
+           
         </ul>
     </nav>
     
