@@ -1,0 +1,17 @@
+
+.nav {
+    
+   
+    padding: 15px;
+    background-color: rgb(37, 172, 37);
+    color: whitesmoke;
+    
+  }
+
+  .lista {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+ 
