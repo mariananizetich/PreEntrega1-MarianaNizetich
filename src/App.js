@@ -1,10 +1,7 @@
-
 import './App.css';
 import Navbar from './Components/NavBar/NavBar';
-import Items from './Components/Container/Items';
 import ListaProductos from './Components/Container/ItemListContainer';
-
-
+import Titulo from "./Components/Container/Titulo";
 
 
 function App() {
@@ -12,10 +9,17 @@ function App() {
   return (
     
     <div className="App">
-      <header>
         <Navbar />
-        </header>
+        <Titulo>
+        <h1>
+          E-Commerce en proceso
+        </h1>
+        <p>
+          Pronto te mostraremos todos los productos disponibles.
+        </p>
+        </Titulo>
       <main>
+        
         <ListaProductos />
         
       </main>
