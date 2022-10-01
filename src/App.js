@@ -13,10 +13,10 @@ function App() {
       <Navbar />
         <Titulo>
         <h1>
-          E-Commerce en proceso
+          CHARLY GARCÍA
         </h1>
         <p>
-          Pronto te mostraremos todos los productos disponibles.
+          CATÁLOGO DE VINILOS DISPONIBLES:
         </p>
         </Titulo>
       <main>
