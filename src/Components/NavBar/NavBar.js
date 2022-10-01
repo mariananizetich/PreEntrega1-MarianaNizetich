@@ -2,7 +2,7 @@ import './NavBar.css';
 import Widget from './CartWidget';
 
 
-const Navbar = ({}) => {
+const Navbar = () => {
    
     return (
         <header>

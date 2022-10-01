@@ -7,3 +7,11 @@
     background-color: lightgreen;
     color: black;
 }
+
+.cards ul {
+    list-style-type:none
+}
+
+.boton {
+    width: 5px;
+}

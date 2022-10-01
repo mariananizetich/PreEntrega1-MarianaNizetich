@@ -1,10 +1,28 @@
 import "./Items.css"
+import Button from "./Button"
 
-const Items = ({greeting}) => {
+
+
+const Items = ({producto, precio}) => {
     return (
         <div  className="cards">
-      <h2>{greeting}</h2>
-      <p>En proceso</p>
+          <ul>
+            <li>
+            <h2>{producto}</h2>
+            </li>
+            <li>
+              <a href="#">IMAGEN</a>
+            </li>
+            <li>
+            <p>{precio}</p>
+            </li>
+          </ul>
+          
+          <Button>Agregar</Button>
+          
+        
+          
+
     </div>
         
     )

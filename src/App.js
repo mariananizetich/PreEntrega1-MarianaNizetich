@@ -4,12 +4,13 @@ import ListaProductos from './Components/Container/ItemListContainer';
 import Titulo from "./Components/Container/Titulo";
 
 
+
 function App() {
   
   return (
     
     <div className="App">
-        <Navbar />
+      <Navbar />
         <Titulo>
         <h1>
           E-Commerce en proceso
@@ -19,10 +20,11 @@ function App() {
         </p>
         </Titulo>
       <main>
-        
         <ListaProductos />
-        
       </main>
+     
+
+      
     
     
     </div>
