@@ -1,12 +1,13 @@
 import Items from "./Items"
 import ItemDetail from "./ItemDetailContainer"
+import "./Items.css" 
 
 
 
 
 const ListaProductos = () => {
 return (
-    <div>
+    <div className="catalogo">
         <Items producto ="Yendo de la Cama al Living" precio="$6500"/>
         <Items producto ="Clics Modernos"precio="$7500"/>
         <Items producto ="Piano Bar" precio="$7800"/>

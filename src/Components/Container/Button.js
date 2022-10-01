@@ -5,6 +5,7 @@ const Button = ({children
 }) =>{
     const [suma, setSuma] = useState(0)
     
+    
 
     const clickHandler = () =>{
             setSuma(suma+1)
@@ -18,8 +19,6 @@ const Button = ({children
             {String(suma)}
             </div>
         </div>
-       
-    
     )
 }
 
