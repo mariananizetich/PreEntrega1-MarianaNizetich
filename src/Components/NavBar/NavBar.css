@@ -3,8 +3,9 @@
     
    
     padding: 15px;
-    background-color: rgb(37, 172, 37);
-    color: whitesmoke;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px black
     
   }
 
@@ -16,6 +17,6 @@
 
   .lista li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
   }
  

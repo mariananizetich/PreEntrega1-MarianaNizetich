@@ -1,25 +1,31 @@
 import { useState } from "react"
 
+const stock = 8
 
-const Button = ({children
-}) =>{
-    const [suma, setSuma] = useState(0)
-    
-    
+const Button = () =>{
+    const [contador, setContador] = useState(0)
 
-    const clickHandler = () =>{
-            setSuma(suma+1)
+
+    const suma = () =>{
+        contador < stock ? setContador(contador+1) : console.log("Hay 8 vinilos en stock")
     }
-    return(
+    const resta = () =>{
+        contador >0 ? setContador(contador-1) : console.log("Valor incorrecto.")
+        
+    }
+
+    return (<div>
+
+        <button onClick={suma}>+</button>
+        <br></br>
+        <button onClick={resta}>-</button>
         <div>
-            <button onClick={clickHandler}>
-            {children}
-            </button>
-            <div>
-            {String(suma)}
-            </div>
+        {String(contador)}
         </div>
-    )
+        </div>)
+            
+    
+    
 }
 
 export default Button

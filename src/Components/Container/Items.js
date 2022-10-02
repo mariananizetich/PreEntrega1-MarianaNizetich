@@ -8,7 +8,7 @@ const Items = ({producto, precio}) => {
         <div  className="cards">
           <ul>
             <li>
-            <h2>{producto}</h2>
+            <h3>{producto}</h3>
             </li>
             <li>
               <a href="#">IMAGEN</a>
@@ -17,12 +17,7 @@ const Items = ({producto, precio}) => {
             <p>{precio}</p>
             </li>
           </ul>
-          
-          <Button>Agregar</Button>
-          
-        
-          
-
+          <Button>+</Button>
     </div>
         
     )
