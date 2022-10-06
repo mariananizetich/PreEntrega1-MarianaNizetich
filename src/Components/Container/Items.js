@@ -1,22 +1,22 @@
 import "./Items.css"
 import Button from "./Button"
 
-
-
-const Items = ({producto, precio}) => {
+const Items = ({name, price, description}) => {
     return (
         <div  className="cards">
           <ul>
             <li>
-            <h3>{producto}</h3>
+            <h2>{name}</h2>
             </li>
             <li>
-              <a href="#">IMAGEN</a>
+            <p>{price}</p>
             </li>
             <li>
-            <p>{precio}</p>
+            <p>{description}</p>
             </li>
+            
           </ul>
+          
           <Button>+</Button>
     </div>
         

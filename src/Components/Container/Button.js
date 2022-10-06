@@ -7,10 +7,10 @@ const Button = () =>{
 
 
     const suma = () =>{
-        contador < stock ? setContador(contador+1) : console.log("Hay 8 vinilos en stock")
+        contador < stock ? setContador(contador+1) : alert("Hay 8 vinilos en stock")
     }
     const resta = () =>{
-        contador >0 ? setContador(contador-1) : console.log("Valor incorrecto.")
+        contador >0 ? setContador(contador-1) : alert("Valor incorrecto.")
         
     }
 
@@ -20,7 +20,7 @@ const Button = () =>{
         <br></br>
         <button onClick={resta}>-</button>
         <div>
-        {String(contador)}
+            <h4>{String(contador)}</h4>
         </div>
         </div>)
             

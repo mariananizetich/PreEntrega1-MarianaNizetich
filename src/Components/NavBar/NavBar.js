@@ -1,4 +1,6 @@
 import './NavBar.css';
+import {NavLink } from 'react-router-dom';
+
 import Widget from './CartWidget';
 
 
@@ -8,23 +10,17 @@ const Navbar = () => {
         <header>
             <nav className="nav">
         <ul className='lista'>
-            <li><a href='#'>
-            HOME    
-            </a>
-            </li>
-            <li><a href='#'>
-                ARTÍCULOS
-            </a>
-            </li>
-            <li><a href='#'>
-                CONTACTO
-            </a>
+            <li>
+            <NavLink to={"/HOME"}>HOME</NavLink>
             </li>
             <li>
-                <a href='#'>
-                <Widget />
-                </a>
-                
+            <NavLink to={"/ARTÍCULOS"}>ARTÍCULOS</NavLink>
+            </li>
+            <li>
+            CONTACTO
+            </li>
+            <li>
+            <Widget /> 
             </li>
         </ul>
     </nav>

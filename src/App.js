@@ -1,7 +1,9 @@
 import './App.css';
 import Navbar from './Components/NavBar/NavBar';
-import ListaProductos from './Components/Container/ItemListContainer';
-import Titulo from "./Components/Container/Titulo";
+import ListaProductos from "./Components/Container/ItemListContainer";
+import Home from './Components/Container/Home';
+import { ItemDetailContainer } from './Components/Container/ItemDetailContainer';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 
 
@@ -9,20 +11,26 @@ function App() {
   
   return (
     
-    <div className="App">
+    <div>
+    
+
+      
+      <BrowserRouter>
       <Navbar />
-        <Titulo>
-        <h1>
-          CHARLY GARCÍA
-        </h1>
-        <p>
-          CATÁLOGO DE VINILOS DISPONIBLES:
-        </p>
-        </Titulo>
+      <Routes>
+        
+        <Route path='/HOME' element={<Home/>}/>
+        <Route path='/ARTÍCULOS' element={<ListaProductos/>}/>
+        <Route path='detail/:Id'element={<ItemDetailContainer/>}/>
+      </Routes>
+        
+      </BrowserRouter>
       <main>
-        <ListaProductos />
+
+      
+        
       </main>
-     
+    
 
       
     

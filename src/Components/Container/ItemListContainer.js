@@ -1,22 +1,20 @@
 import Items from "./Items"
-import ItemDetail from "./ItemDetailContainer"
 import "./Items.css" 
-
-
 
 
 const ListaProductos = () => {
 return (
+    <main>
     <div className="catalogo">
-        <Items producto ="Yendo de la Cama al Living" precio="$6500"/>
-        <Items producto ="Clics Modernos"precio="$7500"/>
-        <Items producto ="Piano Bar" precio="$7800"/>
-        <Items producto ="Parte de la Religión" precio="$9000"/>
-        <Items producto ="Cómo Conseguir Chicas" precio="$9000"/>
-        <Items producto ="Filosofía Barata y Zapatos de Goma" precio="$9000"/>
-        <Items producto ="La Hija de la Lágrima" precio="$9000"/>
-        <Items producto ="Hello! MTV Unplugged" precio="$9000"/>
+        <Items name ="Yendo de la Cama al Living" price="$6500" description="CHARLY 1"/>
+        <Items name ="Clics Modernos"precio="$7500" description="CHARLY 2"/>
+        <Items name ="Piano Bar" price="$7800" description="CHARLY 3"/>
+        <Items name ="Filosofía Barata y Zapatos de Goma" price="$9000" description="CHARLY 4"/>
+        <Items name ="La Hija de la Lágrima" price="$9000" description="CHARLY 5"/>
+        <Items name ="Hello! MTV Unplugged" price="$9000" description="CHARLY 6"/>
     </div>
+    </main>
+    
 )    
 }
 
