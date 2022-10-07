@@ -1,13 +1,15 @@
-
+import "./Items.css" 
 import Items from "./Items";
 
 const ItemList = ({lista}) =>{
         return(
-            <div>
+            <div className="catalogo">
                 {
                     lista.map((product)=>(
     
-                            <Items title={product.title} price={product.price} description={product.description} 
+                            <Items title={product.title}
+                            price={product.price} 
+                            description={product.description} 
                             category={product.category} />
                     
                     ))

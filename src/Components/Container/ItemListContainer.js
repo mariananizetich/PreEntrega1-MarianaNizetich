@@ -9,7 +9,7 @@ const ListaProductos = ()=>{
     const [disc, setDisc] = useState([])
 
     useEffect(()=>{
-        fetch("https://apigenerator.dronahq.com/api/g1w-6XIq/data")
+        fetch("https://apigenerator.dronahq.com/api/8tlb9fzR/data")
         .then((res)=> res.json())
         .then((discres)=> setDisc(discres))
     },[])
@@ -30,21 +30,5 @@ const ListaProductos = ()=>{
     
 }
 
-/*
-const ListaProductos = () => {
-return (
-    <main>
-    <div className="catalogo">
-        <Items name ="Yendo de la Cama al Living" price="$6500" description="CHARLY 1" category="Solista"/>
-        <Items name ="Clics Modernos"price="$8500" description="CHARLY 2" category="Solista"/>
-        <Items name ="Piano Bar" price="$7800" description="CHARLY 3" category="Solista"/>
-        <Items name ="Filosofía Barata y Zapatos de Goma" price="$9000" description="CHARLY 4" category="Solista"/>
-        <Items name ="La Hija de la Lágrima" price="$9000" description="CHARLY 5" category="Solista"/>
-        <Items name ="Hello! MTV Unplugged" price="$9000" description="CHARLY 6" category="Solista"/>
-    </div>
-    </main>
-    
-)    
-}
-*/
+
 export default ListaProductos
