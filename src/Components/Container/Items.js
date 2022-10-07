@@ -1,25 +1,25 @@
 import "./Items.css"
 import Button from "./Button"
 
-const Items = ({name, price, description}) => {
+const Items = ({title, price, description, category}) => {
     return (
+        <main>
         <div  className="cards">
-          <ul>
-            <li>
-            <h2>{name}</h2>
-            </li>
-            <li>
-            <p>{price}</p>
-            </li>
-            <li>
-            <p>{description}</p>
-            </li>
+          
+            <h2>{title}</h2>
             
-          </ul>
+            
+            <h5>{price}</h5>
+            
+            <h5>{description}</h5>
+            
+            <p>{category}</p>
+            
+        
           
           <Button>+</Button>
     </div>
-        
+    </main>
     )
 }
 
