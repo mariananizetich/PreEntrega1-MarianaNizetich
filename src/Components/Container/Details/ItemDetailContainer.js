@@ -4,15 +4,15 @@ import ItemDetail from "./ItemDetail"
 
 const DetailList = () =>{
  const {id} = useParams()
-  const [disc, setDisc] = useState([])
+  const [disc, setDisc] = useState({})
 
   useEffect(()=>{
     fetch(`https://apigenerator.dronahq.com/api/1K77uVYI/data/${id}`)
-    .then((res) => res.json)
+    .then((res) => res.json())
     
     .then((disc)=>{
       setTimeout(()=>{
-        setDisc(disc.map(disc =>(disc.id === id)))
+        setDisc(disc);
       }, 2000)
     })
     console.log(id)

@@ -7,13 +7,7 @@ const ItemDetail = ({detail}) =>{
     return(
         <div className="catalogo">
             {
-                detail.map((product)=>(
-                        <Items key={product.id} title={product.title}
-                        price={product.price}
-                        artist= {product.artista} 
-                        description={product.description}/>
-                        
-                ))
+                <Items key={detail.id} title={detail.title} price= {detail.price} artist={detail.artist} description={detail.description}/>
             }
         </div>
     )
