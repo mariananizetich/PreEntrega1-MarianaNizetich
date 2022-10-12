@@ -15,7 +15,7 @@ const DetailList = () =>{
         setDisc(disc);
       }, 2000)
     })
-    console.log(id)
+   
   },[id])
   
   

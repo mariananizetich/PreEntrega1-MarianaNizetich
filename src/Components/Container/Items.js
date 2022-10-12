@@ -12,6 +12,8 @@ const Items = ({ title, artist, price, description, category, id }) => {
         <h3>{artist}</h3>
   
         <h5>{price}</h5>
+
+        <p>IMAGEN</p>
   
         <h5>{description}</h5>
   
