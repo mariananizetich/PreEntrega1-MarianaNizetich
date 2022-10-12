@@ -1,4 +1,4 @@
-import "./Items.css" 
+import "./Items.css";
 import Items from "./Items";
 
 const ItemList = ({lista}) =>{
@@ -7,8 +7,9 @@ const ItemList = ({lista}) =>{
                 {
                     lista.map((product)=>(
     
-                            <Items title={product.title}
-                            price={product.price} 
+                            <Items key={product.id} title={product.title}
+                            price={product.price}
+                            artist= {product.artista} 
                             description={product.description} 
                             category={product.category} />
                     

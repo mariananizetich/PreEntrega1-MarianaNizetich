@@ -4,21 +4,24 @@ body {
 .cards {
     padding: 20px;
     margin: 15px;
-    width: 300px;
+    width: 200px;
     background-color: white;
     color: black;
     box-shadow: 2px 5px 5px black
     
 }
 
+
 .cards ul {
     list-style-type:none
 }
 
 .catalogo {
+    padding: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
 }
 

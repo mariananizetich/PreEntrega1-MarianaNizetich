@@ -11,16 +11,19 @@ const Navbar = () => {
             <nav className="nav">
         <ul className='lista'>
             <li>
-            <NavLink to={"/HOME"}>HOME</NavLink>
+            <NavLink to={"/"}>HOME</NavLink>
             </li>
             <li>
-            <NavLink to={"/ARTÍCULOS"}>ARTÍCULOS</NavLink>
+            <NavLink to={"/category/CharlyGarcia"}>CHARLY GARCÍA</NavLink>
             </li>
             <li>
-            CONTACTO
+            <NavLink to={"/category/PinkFloyd"}>PINK FLOYD</NavLink>
             </li>
             <li>
-            <Widget /> 
+            <NavLink to={"/contacto"}>CONTACTO</NavLink>
+            </li>
+            <li>
+            <NavLink to={"/carrito"}><Widget /></NavLink>
             </li>
         </ul>
     </nav>

@@ -1,12 +1,15 @@
 import "./Titulo.css"
 
+
 const Home = () =>{
     return(
     <div className="titulo">
         <h1>
-          CHARLY GARCÍA
+          PEPERINA
         </h1>
-       BIENVENIDOS<p></p>
+        
+        <p>BIENVENIDOS A LA TIENDA DE VINILOS</p>
+
     </div>
     )
     

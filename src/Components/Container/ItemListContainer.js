@@ -1,34 +1,43 @@
-import { useEffect, useState } from "react"
-import ItemList from "./ItemList"
-import "./Items.css" 
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ItemList from "./ItemList";
+import "./Items.css";
 
 
-const ListaProductos = ()=>{
-    
+
+
+const ListaProductos = () => {
+    const {category} = useParams()
 
     const [disc, setDisc] = useState([])
 
     useEffect(()=>{
-        fetch("https://apigenerator.dronahq.com/api/8tlb9fzR/data")
-        .then((res)=> res.json())
-        .then((discres)=> setDisc(discres))
-    },[])
+        fetch("https://apigenerator.dronahq.com/api/1K77uVYI/data")
+        .then((res) => res.json())
+        .then((disc) => {
+            setTimeout(() =>{
+                if (category){
+                    setDisc(disc.filter(item => item.category === category))
+                }
+                else{
+                    setDisc(disc)
+                }
+            }, 2000)
+        })
+    }, [category])
 
-    console.log(disc)
 
-    return(
+    return (
         <div className="catalogo">
-            {
-            disc.length === 0 ? (<h2>Cargando</h2>)
-            : (<div>
+            {disc.length === 0 ?
+            (<div>CARGANDO</div>) :
+            (<div>
                 <ItemList lista={disc}/>
-            </div>)
-            }
+            </div>)}
         </div>
-        
     )
-    
+
 }
+    
 
-
-export default ListaProductos
+    export default ListaProductos
