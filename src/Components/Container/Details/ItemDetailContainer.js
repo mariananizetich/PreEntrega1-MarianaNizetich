@@ -7,24 +7,26 @@ const DetailList = () =>{
   const [disc, setDisc] = useState({})
 
   useEffect(()=>{
-    fetch(`https://apigenerator.dronahq.com/api/1K77uVYI/data/${id}`)
+    fetch(`https://apigenerator.dronahq.com/api/B14Oz44I/data/${id}`)
     .then((res) => res.json())
     
     .then((disc)=>{
-      setTimeout(()=>{
+
         setDisc(disc);
-      }, 2000)
+      
     })
    
-  },[id])
+  }, [id])
   
   
   return (
+
     <div>
       {
         disc ? (<ItemDetail detail={disc}/>) : (<h3>CARGANDO</h3>)
       }
     </div>
+
     )
 }
 

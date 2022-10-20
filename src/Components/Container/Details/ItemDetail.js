@@ -1,14 +1,18 @@
 
-import "../Items.css"
+
 import Items from "../Items";
+import Button from "../ItemCount";
 
 
 const ItemDetail = ({detail}) =>{
     return(
-        <div className="catalogo">
+        <div className="details">
             {
-                <Items key={detail.id} title={detail.title} price= {detail.price} artist={detail.artist} description={detail.description}/>
+                <Items key={detail.id} title={detail.title} price= {detail.price} artist={detail.artist} description={detail.description} />
+                
             }
+           
+           <Button/>
         </div>
     )
 }

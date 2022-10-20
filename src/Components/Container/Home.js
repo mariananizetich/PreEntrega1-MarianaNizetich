@@ -8,7 +8,7 @@ const Home = () =>{
           PEPERINA
         </h1>
         
-        <p>BIENVENIDOS A LA TIENDA DE VINILOS</p>
+        <p>BIENVENIDOS</p>
 
     </div>
     )

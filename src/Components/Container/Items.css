@@ -25,3 +25,19 @@ body {
     
 }
 
+
+
+.counter {
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    justify-content: baseline;
+
+}
+
+.button {
+    width: 20px;
+    margin: 8px;
+    background-color: white;
+}
+

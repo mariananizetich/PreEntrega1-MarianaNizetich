@@ -1,6 +1,6 @@
 import './NavBar.css';
 import {NavLink } from 'react-router-dom';
-
+import Brand from './Brand';
 import Widget from './CartWidget';
 
 
@@ -11,7 +11,7 @@ const Navbar = () => {
             <nav className="nav">
         <ul className='lista'>
             <li>
-            <NavLink to={"/"}>HOME</NavLink>
+            <NavLink to={"/"}><Brand/></NavLink>
             </li>
             <li>
             <NavLink to={"/category/CharlyGarcia"}>CHARLY GARCÍA</NavLink>

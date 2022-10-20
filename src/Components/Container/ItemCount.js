@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Items.css"
 
 const stock = 8
 
@@ -14,11 +15,11 @@ const Button = () =>{
         
     }
 
-    return (<div>
+    return (<div className="counter"> 
 
-        <button onClick={suma}>+</button>
-        <br></br>
-        <button onClick={resta}>-</button>
+        <button onClick={suma} className="button">+</button>
+        
+        <button onClick={resta} className="button">-</button>
         <div>
             <h4>{String(contador)}</h4>
         </div>

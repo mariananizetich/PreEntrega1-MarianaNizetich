@@ -1,5 +1,4 @@
 import "./Items.css";
-import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const Items = ({ title, artist, price, description, category, id }) => {
@@ -18,8 +17,7 @@ const Items = ({ title, artist, price, description, category, id }) => {
         <h5>{description}</h5>
   
         <p>{category}</p>
-  
-        <Button />
+
       </div>
     );
   };
