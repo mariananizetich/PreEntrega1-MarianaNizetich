@@ -7,7 +7,7 @@ const DetailList = () =>{
   const [disc, setDisc] = useState({})
 
   useEffect(()=>{
-    fetch(`https://apigenerator.dronahq.com/api/B14Oz44I/data/${id}`)
+    fetch(`https://apigenerator.dronahq.com/api/S0cr36E5/data/${id}`)
     .then((res) => res.json())
     
     .then((disc)=>{

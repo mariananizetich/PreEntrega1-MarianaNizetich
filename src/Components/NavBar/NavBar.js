@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink to={"/contacto"}>CONTACTO</NavLink>
             </li>
             <li>
-            <NavLink to={"/carrito"}><Widget /></NavLink>
+            <NavLink to={"/cart"}><Widget /></NavLink>
             </li>
         </ul>
     </nav>

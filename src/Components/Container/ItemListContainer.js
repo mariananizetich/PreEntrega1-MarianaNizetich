@@ -10,7 +10,7 @@ const ListaProductos = () => {
 
     useEffect(()=>{
         
-        fetch("https://apigenerator.dronahq.com/api/1K77uVYI/data")
+        fetch("https://apigenerator.dronahq.com/api/S0cr36E5/data")
         .then((res) => res.json())
         .then((disc) => {
 

@@ -1,4 +1,4 @@
-const Carrito = () =>{
+const Cart = () =>{
     return(
         <div>
             <h3>CARRITO EN PROCESO</h3>
@@ -7,4 +7,4 @@ const Carrito = () =>{
         
 }
 
-export default Carrito
+export default Cart
