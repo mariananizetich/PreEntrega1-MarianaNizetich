@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import disc from "./Disc.png"
+import disc from "./disc.png"
 import "./Brand.css"
 
 

@@ -14,10 +14,7 @@ const Navbar = () => {
             <NavLink to={"/"}><Brand/></NavLink>
             </li>
             <li>
-            <NavLink to={"/category/CharlyGarcia"}>CHARLY GARCÍA</NavLink>
-            </li>
-            <li>
-            <NavLink to={"/category/PinkFloyd"}>PINK FLOYD</NavLink>
+            <NavLink to={"/productos"}>NUESTROS PRODUCTOS</NavLink>
             </li>
             <li>
             <NavLink to={"/contacto"}>CONTACTO</NavLink>

@@ -1,3 +1,4 @@
+
 import "./Titulo.css"
 
 
@@ -10,6 +11,7 @@ const Home = () =>{
         
         <p>BIENVENIDOS</p>
 
+      
     </div>
     )
     

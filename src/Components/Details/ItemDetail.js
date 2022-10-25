@@ -1,7 +1,7 @@
 
 
 import Items from "../Container/Items";
-import Button from "../Container/ItemCount";
+import Button from "../Container/ItemCounter";
 
 
 const ItemDetail = ({detail}) =>{
