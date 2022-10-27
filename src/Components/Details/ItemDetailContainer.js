@@ -1,13 +1,29 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
-import ItemDetail from "./ItemDetail"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ItemDetail from "./ItemDetail";
+import {  getFirestore, getDoc, doc  } from "firebase/firestore/lite"
+
 
 const DetailList = () =>{
  const {id} = useParams()
-  const [disc, setDisc] = useState({})
+  const [data, setData] = useState({})
 
   useEffect(()=>{
+    const db = getFirestore()
+    const ItemsId = doc(db, "items", id)
+
+    getDoc(ItemsId)
+    .then(
+      res => setData ({id: res.id, ...res.data()})
+    )
+
+    
+
+    
+    /*
+
     fetch(`https://apigenerator.dronahq.com/api/S0cr36E5/data/${id}`)
+
     .then((res) => res.json())
     
     .then((disc)=>{
@@ -15,6 +31,8 @@ const DetailList = () =>{
         setDisc(disc);
       
     })
+    */
+
    
   }, [id])
   
@@ -23,7 +41,7 @@ const DetailList = () =>{
 
     <div>
       {
-        disc ? (<ItemDetail detail={disc}/>) : (<h3>CARGANDO</h3>)
+        data ? (<ItemDetail detail={data}/>) : (<h3>CARGANDO</h3>)
       }
     </div>
 

@@ -6,7 +6,7 @@ class Widget extends Component {
     render (){
         return(
             <div className='carrito'>
-                <img src={widget}/>
+                <img src={widget} alt="Carrito de compras"/>
             </div>
         )
     }

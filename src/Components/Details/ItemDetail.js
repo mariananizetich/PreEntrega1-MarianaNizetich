@@ -1,10 +1,14 @@
 
 
 import Items from "../Container/Items";
-import Button from "../Container/ItemCounter";
+import ItemCount from "../Container/ItemCounter";
 
 
 const ItemDetail = ({detail}) =>{
+
+    const onAdd = () =>{
+        
+    }
     return(
         <div className="details">
             {
@@ -12,7 +16,7 @@ const ItemDetail = ({detail}) =>{
                 
             }
            
-           <Button/>
+           <ItemCount initial={1} stock={8} onAdd={onAdd}/>
         </div>
     )
 }

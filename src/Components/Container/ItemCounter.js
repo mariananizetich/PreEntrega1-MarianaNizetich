@@ -3,7 +3,7 @@ import "./Items.css"
 
 const stock = 8
 
-const Button = () =>{
+const Counter = () =>{
     const [contador, setContador] = useState(0)
 
 
@@ -29,4 +29,4 @@ const Button = () =>{
     
 }
 
-export default Button
+export default Counter
