@@ -1,6 +1,12 @@
 body {
     background-color: whitesmoke
 }
+
+.homeStyle {
+    text-align: center;
+    color: black;
+}
+
 .cards {
     padding: 20px;
     margin: 15px;
@@ -37,6 +43,11 @@ body {
 
 .button {
     width: 20px;
+    margin: 8px;
+    background-color: white;
+}
+
+.cartButton {
     margin: 8px;
     background-color: white;
 }

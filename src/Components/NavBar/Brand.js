@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import disc from "./disc.png"
-import "./Brand.css"
+import React, { Component } from 'react';
+import disc from "./disc.png";
+import './NavBar.css';
 
 
 class Brand extends Component {

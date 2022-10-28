@@ -45,6 +45,7 @@ const ListaProductos = () => {
             (<div>
                 <h2>
                     {category}
+                
                 </h2>
                 <ItemList lista={data}/>
             </div>)}

@@ -1,7 +1,7 @@
+import Items from "../ItemContainer/Items";
+import Counter from "../ItemContainer/ItemCounter";
 
 
-import Items from "../Container/Items";
-import ItemCount from "../Container/ItemCounter";
 
 
 const ItemDetail = ({detail}) =>{
@@ -9,14 +9,18 @@ const ItemDetail = ({detail}) =>{
     const onAdd = () =>{
         
     }
+    
     return(
+        
         <div className="details">
-            {
+         
+           
+            {   
                 <Items key={detail.id} title={detail.title} image={detail.image} price= {detail.price} artist={detail.artist} description={detail.description} />
                 
             }
            
-           <ItemCount initial={1} stock={8} onAdd={onAdd}/>
+           <Counter initial={1} stock={8} onAdd={onAdd}/>
         </div>
     )
 }

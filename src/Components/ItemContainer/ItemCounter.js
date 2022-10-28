@@ -1,5 +1,5 @@
-import { useState } from "react"
-import "./Items.css"
+import { useState } from "react";
+import "./Items.css";
 
 const stock = 8
 
@@ -23,6 +23,8 @@ const Counter = () =>{
         <div>
             <h4>{String(contador)}</h4>
         </div>
+
+        <button className="cartButton">Agregar al carrito</button>
         </div>)
             
     

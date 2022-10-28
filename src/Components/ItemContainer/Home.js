@@ -1,10 +1,10 @@
 
-import "./Titulo.css"
+import "./Items.css";
 
 
 const Home = () =>{
     return(
-    <div className="titulo">
+    <div className="homeStyle">
         <h1>
           PEPERINA
         </h1>

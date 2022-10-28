@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import widget from "./widget.png"
-import "./Widget.css"
+import React, { Component } from 'react';
+import widget from "./widget.png";
+import './NavBar.css';
 
 class Widget extends Component {
     render (){
