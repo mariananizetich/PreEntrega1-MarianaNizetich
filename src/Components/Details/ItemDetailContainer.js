@@ -16,23 +16,6 @@ const DetailList = () =>{
     .then(
       res => setData ({id: res.id, ...res.data()})
     )
-
-    
-
-    
-    /*
-
-    fetch(`https://apigenerator.dronahq.com/api/S0cr36E5/data/${id}`)
-
-    .then((res) => res.json())
-    
-    .then((disc)=>{
-
-        setDisc(disc);
-      
-    })
-    */
-
    
   }, [id])
   

@@ -12,7 +12,7 @@ const ItemDetail = ({detail}) =>{
     return(
         <div className="details">
             {
-                <Items key={detail.id} title={detail.title} price= {detail.price} artist={detail.artist} description={detail.description} />
+                <Items key={detail.id} title={detail.title} image={detail.image} price= {detail.price} artist={detail.artist} description={detail.description} />
                 
             }
            

@@ -9,7 +9,7 @@ const ItemList = ({lista}) =>{
                     lista.map((product)=> 
                     
                     (
-                        <Items key={product.id} title={product.title} artist={product.artist} id={product.id}/>
+                        <Items key={product.id} title={product.title} image={product.image} artist={product.artist} id={product.id}/>
 
                             
                     ))
