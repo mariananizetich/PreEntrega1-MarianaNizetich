@@ -1,5 +1,5 @@
 
-import "./Items.css";
+import "../ItemContainer/Items.css";
 
 
 const Home = () =>{

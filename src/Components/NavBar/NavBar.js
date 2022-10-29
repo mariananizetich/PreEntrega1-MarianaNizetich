@@ -5,7 +5,9 @@ import Widget from './CartWidget';
 
 
 const Navbar = () => {
-   
+
+  
+    
     return (
         <header>
             <nav className="nav">
@@ -24,11 +26,7 @@ const Navbar = () => {
             </li>
         </ul>
     </nav>
-        </header>
-            
-    
-            
-        
+        </header>   
     )
 }
 

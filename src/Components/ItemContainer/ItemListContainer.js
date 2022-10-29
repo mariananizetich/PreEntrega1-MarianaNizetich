@@ -9,10 +9,13 @@ const ListaProductos = () => {
     const {category} = useParams();
     const [data, setData] = useState([]);
 
-    
+    // Traigo los productos de la base de datos
+
     useEffect(()=>{
         const db = getFirestore()
         const itemsCollection = collection(db, "items")
+
+    // Si accedo a una categoría específica, filtro los productos aplicando "where" 
 
         if (category){
             const CategoryFilter = query(itemsCollection, where("category", "==", category))
@@ -25,6 +28,8 @@ const ListaProductos = () => {
         )
         }
 
+        // Si no, muestro todos los productos
+
         else {
             getDocs(itemsCollection)
             .then(
@@ -36,6 +41,8 @@ const ListaProductos = () => {
         
 
     }, [category])
+
+    // Si hay productos que mostrar, los muestro. Si no, se muestra un "CARGANDO"
 
 
     return (

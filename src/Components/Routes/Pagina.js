@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Items.css";
+import "../ItemContainer/Items.css";
 
 const Pagina = () =>{
 

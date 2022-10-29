@@ -1,6 +1,7 @@
 import "./Items.css";
 import Items from "./Items";
 
+// Por cada elemento de "lista" que recibo de ItemListContainer, creo un ítem que muestra los productos.
 
 const ItemList = ({lista}) =>{
         return(

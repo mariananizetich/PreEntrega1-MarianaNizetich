@@ -1,0 +1,15 @@
+.ItemCart {
+    display: flex;
+    max-width: 500px;
+    margin: 1rem auto;
+    border-bottom: 1px solid black;
+}
+
+.ItemCart img{
+    margin-right: 1rem;
+}
+
+.cart {
+    text-align: center;
+}
+

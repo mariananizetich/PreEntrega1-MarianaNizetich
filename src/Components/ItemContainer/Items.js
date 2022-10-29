@@ -1,7 +1,7 @@
 import "./Items.css";
 import { Link } from "react-router-dom";
 
-const Items = ({ title, artist, image, price, description, category, id }) => {
+const Items = ({ title, artist, image, price, description, category, id, stock }) => {
     return (
       
         <div className="cards">
@@ -13,7 +13,7 @@ const Items = ({ title, artist, image, price, description, category, id }) => {
         <h3>{artist}</h3>
 
         <Link to={`/details/${id}`}>
-        <img src={image} alt="vinilo"/>
+        <img src={image} alt={title}/>
         </Link>
   
         <h5>{description}</h5>
