@@ -38,11 +38,9 @@ const CartProvider = ({children}) =>{
         prev + act.quantity * act.price, 0)
     };
 
-    // Función para mostrar la cantidad de productos que hay en el carrito:
+   
 
-    const totalProducts = () => {
-        cart.reduce ((acc, prodActual) => acc + prodActual.quantity, 0)
-    }
+    
 
 
     return(
@@ -52,7 +50,6 @@ const CartProvider = ({children}) =>{
             removeItem,
             addItem,
             totalPrice,
-            totalProducts,
             cart
 
         }}>
