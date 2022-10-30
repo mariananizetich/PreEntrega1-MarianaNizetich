@@ -1,8 +1,8 @@
 # PROYECTO FINAL REACT JS | CODERHOUSE
 Mi nombre es Mariana Nizetich, estudiante de programación en Coderhouse.
 Para este proyecto, creé un Ecommerce de vinilos dividido en dos categorías (Charly García y Pink Floyd), donde el usuario al acceder a cada una de ellas encontrará los vinilos incluidos de cada artista. A su vez, podrá acceder al detalle de cada uno al hacer click en la imagen del mismo.
-Allí tendrá la opción de agregar al carrito según cantidades, hasta agotar stock. Cuando lo haga, los productos seleccionados se mostrarán directamente en dicho carrito con el precio final, y estará la opción de finalizar la compra o volver a Home. También podrá borrar ítems o vaciar el carrito si lo desea.
-Si el usuario finaliza la compra, tendrá que completar un formulario de datos. Una vez completados, aparecerá un cartel de confirmación y se vacía el carrito.
+Allí tendrá la opción de agregar al carrito según cantidades, hasta agotar stock. Cuando lo haga, los productos seleccionados se mostrarán en el carrito con el precio final, y estará la opción de finalizar la compra o volver a productos. También podrá borrar ítems o vaciar el carrito si lo desea.
+Una vez el usuario finaliza la compra, completa un breve formulario y, al hacerlo, recibe un código.
 
 
 
