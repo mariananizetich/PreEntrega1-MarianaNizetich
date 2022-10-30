@@ -20,6 +20,7 @@ const ItemCart = ({product}) => {
                 <p>Subtotal: $ {product.quantity * product.price}</p>
                 <button onClick={() => removeItem(product.id)}>X</button>
             </div>
+
                 
             
         </div>

@@ -36,7 +36,7 @@ export const ItemDetail = ({detail}) =>{
                 
             }
             {
-                gotoCart ? <Link to={"/cart"}>Finalizar compra</Link> :
+                gotoCart ? <Link to={"/cart"}><button>Ir al Carrito</button></Link> :
                 <Counter initial={1} stock={detail.stock} onAdd={onAdd} />
             }
            

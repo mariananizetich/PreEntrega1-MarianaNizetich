@@ -5,10 +5,14 @@ import "./Cart.css";
 
 
 
+
 const Cart = () =>{
-    const {cart, totalPrice} = useCartContext()
+    const {cart, totalPrice, clearCart} = useCartContext();
+   
+    
 
     // Si el carrito está vacío, muestro un link para ir a Productos. Si hay productos en el carrito, los muestro, para eso hago un mapeo del carrito. Por cada producto creo un ítem.
+    // Si el carrito contiene productos, doy opciones para vaciarlo, finalizar compra o seguir comprando.
 
     if (cart.length === 0){
         return(
@@ -33,10 +37,27 @@ const Cart = () =>{
                 <p className="cart">
                 Total: $ {totalPrice()}
                 </p>
+
+    
+
+
+            <div className="cartLink">
+            <Link to={"/productos"}>
+            <button className="cartButton">Seguir comprando</button>
+            </Link>
+
+            <Link to={"/checkout"}>
+            <button className="cartButton">Finalizar compra</button>
+            </Link>
+
+            <button className="cartButton" onClick={clearCart}>Vaciar Carrito</button>
+
             </div>
-               
-            
+
         </div>
+                
+        </div>
+               
             
     )
 }

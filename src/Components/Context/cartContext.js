@@ -16,6 +16,7 @@ const CartProvider = ({children}) =>{
 
     const removeItem = (id) => setCart(cart.filter(prod => prod.id !== id));
 
+
     
 
     // Si el ítem seleccionado no está en el carrito, lo agrego. Si está, solo modifico la cantidad, sin duplicar el producto. Para esto, uso un map: 
@@ -28,6 +29,7 @@ const CartProvider = ({children}) =>{
         }
         
     };
+
 
     // Recorro el array con un reduce, y por cada elemento ejecuto la función para calcular el precio final:
 
