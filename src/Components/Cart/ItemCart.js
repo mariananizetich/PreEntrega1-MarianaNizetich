@@ -1,5 +1,5 @@
 import "./Cart.css";
-import { useCartContext } from "../Context/CartContext";
+import { useCartContext } from "../Context/cartContext";
 
 
 

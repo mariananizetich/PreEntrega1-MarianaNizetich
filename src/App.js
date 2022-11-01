@@ -9,7 +9,7 @@ import Pagina from './Components/Routes/Pagina';
 import ListaProductos from './Components/ItemContainer/ItemListContainer';
 import { useEffect, useState } from 'react';
 import DetailList from "./Components/Details/ItemDetailContainer";
-import CartProvider from './Components/Context/CartContext';
+import CartProvider from './Components/Context/cartContext';
 import Brief from './Components/Checkout/Brief';
 import ContactForm from './Components/Routes/Contacto';
 
