@@ -12,7 +12,6 @@ import DetailList from "./Components/Details/ItemDetailContainer";
 import CartProvider from './Components/Context/cartContext';
 import Brief from './Components/Checkout/Brief';
 import ContactForm from './Components/Routes/Contacto';
-import CartProvider from './Components/Context/cartContext';
 
 
 
