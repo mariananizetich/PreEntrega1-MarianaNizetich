@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import disc from "./disc.png";
+import Disc from "./Disc.png";
 import './NavBar.css';
 
 
@@ -7,7 +7,7 @@ class Brand extends Component {
     render (){
         return(
             <div className='brand'>
-                <img src={disc} alt="vinilo"/>
+                <img src={Disc} alt="vinilo"/>
             </div>
         )
     }
