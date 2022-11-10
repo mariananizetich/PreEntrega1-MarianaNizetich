@@ -61,7 +61,7 @@ const Brief = () =>{
                 />
                 </div>
                 <div>
-                <label htmlFor="message" className='label'>Método de pago:</label>
+                <label htmlFor="message" className='label'>Método de pago</label>
                 <textarea
                 name="message"
                 id="message"
@@ -77,5 +77,5 @@ const Brief = () =>{
         </div>
       )
     }
-    
+
 export default Brief
