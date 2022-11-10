@@ -4,85 +4,78 @@ import "./Brief.css";
 import { useState } from "react";
 
 
-
+const defaultForm = {name: "", email: "", message: ""};
 
 const Brief = () =>{
-    const {cart, totalPrice} = useCartContext();
-    const [orderId, setOrderId] = useState();
+    const {cart, totalPrice, clearCart} = useCartContext();
+    const [id, setId] = useState("");
+    const [form, setForm] = useState(defaultForm); 
     
     
     
-    const order = {
-        items: cart.map(prod => ({id: prod.id, title: prod.title, price: prod.price, quantity: prod.quantity})),
-        total: totalPrice(),
+    const changeHandler = (ev) => {
+        setForm({...form, [ev.target.name]: ev.target.value});
     };
 
-    
-    
-
-    const saveOrder = () =>{
-        const db = getFirestore()
+    const submitHandler = (ev) => {
+        ev.preventDefault();
+        const db = getFirestore();
         const orderCol = collection(db, "orders");
-        addDoc(orderCol, order)
-        .then((res) => {
-            setOrderId(res.id)
+        addDoc(orderCol,{
+            form,
+            items: cart,
+            total: totalPrice(),
+        }).then((snapshot) => {
+        setId(snapshot.id);
+        clearCart()
+        });
+      };
 
-            
-          })
-        
-    
-     
-
-    }
-
-
-    return(
-
-
-        <div className="brief">  
-        
-            <div>
-            <form>
-                <div className="label">
-                <label htmlFor="name">Nombre y Apellido
-                :</label>
-                <input name="name"
+      return(
+        <div className="brief">
+            {
+                id ? (<div className="label">
+                    <h3>Su compra fue realizada con éxito con el código {id}. ¡Muchas gracias!</h3>
+                </div>) : 
+                (<div className="label">
+                <form onSubmit={submitHandler}>
+                <div>
+                <label htmlFor="name" className='label'>Nombre</label>
+                <input
+                name="name"
                 id="name"
-                
-               
-                className="label"/>
+                value={form.name}
+                onChange={changeHandler}
+                className='label'
+                />
                 </div>
-
-                <div className="label">
-                <label htmlFor="email">Email:</label>
-                <input 
+                <div>
+                <label htmlFor="email" className='label'>Email</label>
+                <input
                 type="email"
                 name="email"
                 id="email"
-               
-                
-                className="label"/>
-                </div>               
-            </form>
-            <div>
-                <button onClick={saveOrder}>
-                    Enviar
-                </button>
-            </div>
-
-            </div>
-
-            <div>
-            <h3>
-            Su compra fue realizada con éxito con el código {orderId}. ¡Muchas gracias!
-            </h3>
-            </div>
-        
-            
-            
+                value={form.email}
+                onChange={changeHandler}
+                className='label'
+                />
+                </div>
+                <div>
+                <label htmlFor="message" className='label'>Método de pago:</label>
+                <textarea
+                name="message"
+                id="message"
+                value={form.message}
+                onChange={changeHandler}
+                className='label'>
+                </textarea>
+                </div>
+                <button className='label'>Enviar</button>
+                </form>
+                </div>)
+            }
         </div>
-    )
-
-}
-
+      )
+    }
+    
 export default Brief
