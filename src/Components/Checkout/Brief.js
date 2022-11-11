@@ -2,7 +2,7 @@ import { useCartContext } from "../Context/cartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import "./Brief.css";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 const defaultForm = {name: "", email: "", message: ""};
 
@@ -62,16 +62,18 @@ const Brief = () =>{
                 </div>
                 <div>
                 <label htmlFor="message" className='label'>Método de pago</label>
-                <textarea
+                <input
                 name="message"
                 id="message"
                 value={form.message}
                 onChange={changeHandler}
                 className='label'>
-                </textarea>
+                </input>
                 </div>
                 <button className='label'>Enviar</button>
                 </form>
+
+                <Link to={"/cart"} className="label"><button>Volver</button></Link>
                 </div>)
             }
         </div>
